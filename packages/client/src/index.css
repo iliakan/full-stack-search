@@ -1,6 +1,3 @@
-@import url(https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-alpha1/dist/css/bootstrap.min.css);
-@import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css);
-
 html,
 body {
   width: 100%;
@@ -83,4 +80,12 @@ body {
 .search-dropdown-menu {
   max-height: 450px;
   overflow: scroll;
+}
+
+.hotel-star {
+  color: gold;
+}
+
+.location-wrapper {
+  max-width: 800px;
 }

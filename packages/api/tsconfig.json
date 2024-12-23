@@ -1,6 +1,6 @@
 {
   "compilerOptions": {
-    "target": "ES2017",
+    "target": "ES2022",
     "module": "ES2022",
     "moduleResolution": "Bundler",
     "esModuleInterop": true,
@@ -8,6 +8,8 @@
     "strict": true,
     "skipLibCheck": true,
     "baseUrl": ".",
-    "outDir": "./dist",
+    "paths": {
+      "@/*": ["./*"]
+    }
   }
 }

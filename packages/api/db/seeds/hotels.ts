@@ -1,7 +1,7 @@
 export const hotels = [
   {
     chain_name: 'Samed Resorts Group',
-    hotel_name: 'Sai Kaew Beach Resort',
+    name: 'Sai Kaew Beach Resort',
     addressline1: '8/1 Moo 4 Tumbon Phe Muang',
     addressline2: '',
     zipcode: '21160',
@@ -13,7 +13,7 @@ export const hotels = [
   },
   {
     chain_name: 'No chain',
-    hotel_name: 'Marine Hotel',
+    name: 'Marine Hotel',
     addressline1: 'Sutton Cross',
     addressline2: '',
     zipcode: 'D13',
@@ -25,7 +25,7 @@ export const hotels = [
   },
   {
     chain_name: 'Melia Hotels International',
-    hotel_name: 'TRYP Malaga Alameda Hotel',
+    name: 'TRYP Malaga Alameda Hotel',
     addressline1: 'Avenida de la Aurora CC.Larios Centro S/N',
     addressline2: '',
     zipcode: '29002',
@@ -37,7 +37,7 @@ export const hotels = [
   },
   {
     chain_name: 'NH Hotels',
-    hotel_name: 'NH Iquique Hotel',
+    name: 'NH Iquique Hotel',
     addressline1: 'Av Costanera 3939',
     addressline2: '',
     zipcode: '1111500',
@@ -49,7 +49,7 @@ export const hotels = [
   },
   {
     chain_name: 'Marriott',
-    hotel_name: 'Sheraton Grand Hotel & Spa, Edinburgh',
+    name: 'Sheraton Grand Hotel & Spa, Edinburgh',
     addressline1: '1 Festival Square',
     addressline2: '',
     zipcode: 'EH39SR',
@@ -61,7 +61,7 @@ export const hotels = [
   },
   {
     chain_name: 'HK CTS Hotels',
-    hotel_name: 'Kew Green Hotel Wanchai Hong Kong',
+    name: 'Kew Green Hotel Wanchai Hong Kong',
     addressline1: '41-49 Hennessy Road',
     addressline2: '',
     zipcode: '',
@@ -73,7 +73,7 @@ export const hotels = [
   },
   {
     chain_name: 'No chain',
-    hotel_name: 'Hotel Dann Carlton Medellin',
+    name: 'Hotel Dann Carlton Medellin',
     addressline1: 'Cra 43A No. 7-50',
     addressline2: '',
     zipcode: '50001',
@@ -85,7 +85,7 @@ export const hotels = [
   },
   {
     chain_name: 'No chain',
-    hotel_name: 'Grand Coloane Resort',
+    name: 'Grand Coloane Resort',
     addressline1: '1918 Estrada de Hac Sa',
     addressline2: '',
     zipcode: '',
@@ -97,7 +97,7 @@ export const hotels = [
   },
   {
     chain_name: 'Skycity',
-    hotel_name: 'SKYCITY Hotel',
+    name: 'SKYCITY Hotel',
     addressline1: 'Corner Victoria & Federal Streets',
     addressline2: '',
     zipcode: '1010',
@@ -109,7 +109,7 @@ export const hotels = [
   },
   {
     chain_name: 'Accor Hotels',
-    hotel_name: 'Pullman Bordeaux Lac',
+    name: 'Pullman Bordeaux Lac',
     addressline1: 'Avenue Jean Gabriel Domergue',
     addressline2: '',
     zipcode: '33300',
@@ -121,7 +121,7 @@ export const hotels = [
   },
   {
     chain_name: 'No chain',
-    hotel_name: 'Hotel Conde Luna',
+    name: 'Hotel Conde Luna',
     addressline1: 'Avenida Independencia, 7',
     addressline2: '',
     zipcode: '24003',
@@ -133,7 +133,7 @@ export const hotels = [
   },
   {
     chain_name: 'No chain',
-    hotel_name: 'Park Suisse Hotel',
+    name: 'Park Suisse Hotel',
     addressline1: 'Via Favale 31',
     addressline2: '',
     zipcode: '16038',
@@ -145,7 +145,7 @@ export const hotels = [
   },
   {
     chain_name: 'No chain',
-    hotel_name: 'Hotel Agua Escondida',
+    name: 'Hotel Agua Escondida',
     addressline1: 'Guillermo Spartling, 4 Centro ',
     addressline2: '',
     zipcode: '40200',
@@ -157,7 +157,7 @@ export const hotels = [
   },
   {
     chain_name: 'No chain',
-    hotel_name: 'Hotel Caribe Cartagena',
+    name: 'Hotel Caribe Cartagena',
     addressline1: 'Carrera 1, 2-87, Bocagrande',
     addressline2: '',
     zipcode: '130001',
@@ -169,7 +169,7 @@ export const hotels = [
   },
   {
     chain_name: 'No chain',
-    hotel_name: 'Haihua Hotel Hangzhou',
+    name: 'Haihua Hotel Hangzhou',
     addressline1: 'No. 298, Qing Chun Road',
     addressline2: '',
     zipcode: '310006',
@@ -181,7 +181,7 @@ export const hotels = [
   },
   {
     chain_name: 'Tokyu Hotels',
-    hotel_name: 'Kobe Sannomiya Tokyu REI Hotel',
+    name: 'Kobe Sannomiya Tokyu REI Hotel',
     addressline1: '6-1-5 Kumoidori, Chuo-ku',
     addressline2: '',
     zipcode: '651-0096',
@@ -193,7 +193,7 @@ export const hotels = [
   },
   {
     chain_name: 'No chain',
-    hotel_name: 'Suites South Burlington',
+    name: 'Suites South Burlington',
     addressline1: '1712 Shelburne Rd.',
     addressline2: '',
     zipcode: '5403',
@@ -205,7 +205,7 @@ export const hotels = [
   },
   {
     chain_name: 'No chain',
-    hotel_name: 'Everbright Convention & Exhibition Centre International Hotel',
+    name: 'Everbright Convention & Exhibition Centre International Hotel',
     addressline1: '66 Caobao Road, Xuhui district',
     addressline2: '',
     zipcode: '',
@@ -217,7 +217,7 @@ export const hotels = [
   },
   {
     chain_name: 'Hilton Worldwide',
-    hotel_name: 'Hilton Garden Inn Pittsburgh University Place',
+    name: 'Hilton Garden Inn Pittsburgh University Place',
     addressline1: '3454 Forbes Avenue',
     addressline2: '',
     zipcode: '15213',
@@ -229,7 +229,7 @@ export const hotels = [
   },
   {
     chain_name: 'No chain',
-    hotel_name: 'Hotel Apogia Nice',
+    name: 'Hotel Apogia Nice',
     addressline1: '26, Rue Smolett',
     addressline2: '',
     zipcode: '6300',
@@ -241,7 +241,7 @@ export const hotels = [
   },
   {
     chain_name: 'Caesars Entertainment Corporation',
-    hotel_name: 'Paris Las Vegas',
+    name: 'Paris Las Vegas',
     addressline1: '3655 Las Vegas Boulevard South',
     addressline2: '',
     zipcode: '89109',
@@ -253,7 +253,7 @@ export const hotels = [
   },
   {
     chain_name: 'Hoteles Catalonia',
-    hotel_name: 'Catalonia Brussels Hotel',
+    name: 'Catalonia Brussels Hotel',
     addressline1: 'Avenue du Haut-Pont, 2 Hoge Bruglaan',
     addressline2: '',
     zipcode: 'B1060',
@@ -265,7 +265,7 @@ export const hotels = [
   },
   {
     chain_name: 'Prince Hotels',
-    hotel_name: 'Grand Prince Hotel Shin Takanawa',
+    name: 'Grand Prince Hotel Shin Takanawa',
     addressline1: '3-13-1 Takanawa, Minato-ku',
     addressline2: '',
     zipcode: '108-8612',
@@ -277,7 +277,7 @@ export const hotels = [
   },
   {
     chain_name: 'No chain',
-    hotel_name: 'Watazen Ryokan Hotel',
+    name: 'Watazen Ryokan Hotel',
     addressline1: '604-8113 Nakagyo-ku Yanaginobaba-dori Rokkaku-kudaru 413',
     addressline2: '',
     zipcode: '604-8113',
@@ -289,7 +289,7 @@ export const hotels = [
   },
   {
     chain_name: 'Thistle & Guoman',
-    hotel_name: 'Amba Hotel Charing Cross',
+    name: 'Amba Hotel Charing Cross',
     addressline1: 'The Strand',
     addressline2: '',
     zipcode: 'WC2N 5HX',
@@ -301,7 +301,7 @@ export const hotels = [
   },
   {
     chain_name: 'No chain',
-    hotel_name: 'Imperial Hotel',
+    name: 'Imperial Hotel',
     addressline1: '32-34 Nathan Road',
     addressline2: '',
     zipcode: '',
@@ -313,7 +313,7 @@ export const hotels = [
   },
   {
     chain_name: 'Leading Hotels of the World',
-    hotel_name: 'Royal Hotel Sanremo',
+    name: 'Royal Hotel Sanremo',
     addressline1: '80 Corso Imperatrice',
     addressline2: '',
     zipcode: '18038',
@@ -325,7 +325,7 @@ export const hotels = [
   },
   {
     chain_name: 'Park Hotels',
-    hotel_name: 'The Park Hotel Visakhapatnam',
+    name: 'The Park Hotel Visakhapatnam',
     addressline1: 'Beach road',
     addressline2: '',
     zipcode: '530023',
@@ -337,7 +337,7 @@ export const hotels = [
   },
   {
     chain_name: 'InterContinental Hotels Group',
-    hotel_name: 'Staybridge Suites Austin Round Rock',
+    name: 'Staybridge Suites Austin Round Rock',
     addressline1: '520 S IH 35 Frontage Rd',
     addressline2: '',
     zipcode: '78681',
@@ -349,7 +349,7 @@ export const hotels = [
   },
   {
     chain_name: 'Sotetsu Fresa Inn',
-    hotel_name: 'Hotel Sunroute Nara',
+    name: 'Hotel Sunroute Nara',
     addressline1: '1110 Takabatake-cho',
     addressline2: '',
     zipcode: '630-8301',
@@ -361,7 +361,7 @@ export const hotels = [
   },
   {
     chain_name: 'Thistle & Guoman',
-    hotel_name: 'The Tower Hotel',
+    name: 'The Tower Hotel',
     addressline1: "St Katharine's Way",
     addressline2: '',
     zipcode: 'E1W 1LD',
@@ -373,7 +373,7 @@ export const hotels = [
   },
   {
     chain_name: 'No chain',
-    hotel_name: 'The Grand New Delhi Hotel',
+    name: 'The Grand New Delhi Hotel',
     addressline1: 'Nelson Mandela Road, Vasant Kunj, Phase II',
     addressline2: '',
     zipcode: '110070',
@@ -385,7 +385,7 @@ export const hotels = [
   },
   {
     chain_name: 'Corinthia Hotels International',
-    hotel_name: 'Corinthia Hotel St. George’s Bay',
+    name: 'Corinthia Hotel St. George’s Bay',
     addressline1: 'St. George`s Bay',
     addressline2: '',
     zipcode: 'STJ 3301',
@@ -397,7 +397,7 @@ export const hotels = [
   },
   {
     chain_name: 'Blue Sea Hotels & Resorts',
-    hotel_name: 'Gran Hotel Cervantes by Blue Sea',
+    name: 'Gran Hotel Cervantes by Blue Sea',
     addressline1: 'Las Mercedes s/n',
     addressline2: '',
     zipcode: '29620',
@@ -409,7 +409,7 @@ export const hotels = [
   },
   {
     chain_name: 'InterContinental Hotels Group',
-    hotel_name: 'Hotel Intercontinental Cali',
+    name: 'Hotel Intercontinental Cali',
     addressline1: 'Av. Colombia No. 2-72',
     addressline2: '',
     zipcode: '760001',
@@ -421,7 +421,7 @@ export const hotels = [
   },
   {
     chain_name: 'Oberoi Hotels & Resorts',
-    hotel_name: 'The Oberoi Rajvilas Jaipur Hotel',
+    name: 'The Oberoi Rajvilas Jaipur Hotel',
     addressline1: 'Goner Road',
     addressline2: '',
     zipcode: '303012',
@@ -433,7 +433,7 @@ export const hotels = [
   },
   {
     chain_name: 'No chain',
-    hotel_name: 'Mariel Hotel Boutique',
+    name: 'Mariel Hotel Boutique',
     addressline1: 'General Belisario Suarez, 240 - Miraflores',
     addressline2: '',
     zipcode: 'Lima18',
@@ -445,7 +445,7 @@ export const hotels = [
   },
   {
     chain_name: 'No chain',
-    hotel_name: 'Hilton Hurghada Long Beach Resort',
+    name: 'Hilton Hurghada Long Beach Resort',
     addressline1: 'Sahl Hashish Red Sea',
     addressline2: '',
     zipcode: '                    ',
@@ -457,7 +457,7 @@ export const hotels = [
   },
   {
     chain_name: 'Daiwa Royal Hotel',
-    hotel_name: 'Royal Hotel MUNAKATA',
+    name: 'Royal Hotel MUNAKATA',
     addressline1: '1303 Tano, Munakata-shi',
     addressline2: '',
     zipcode: '811-3514',
@@ -469,7 +469,7 @@ export const hotels = [
   },
   {
     chain_name: 'No chain',
-    hotel_name: 'Gioberti Hotel',
+    name: 'Gioberti Hotel',
     addressline1: 'Via Gioberti 20',
     addressline2: '',
     zipcode: '185',
@@ -481,7 +481,7 @@ export const hotels = [
   },
   {
     chain_name: 'No chain',
-    hotel_name: 'Hotel Serrano',
+    name: 'Hotel Serrano',
     addressline1: 'Marques de Villamejor, 8',
     addressline2: '',
     zipcode: '28006',
@@ -493,7 +493,7 @@ export const hotels = [
   },
   {
     chain_name: '',
-    hotel_name: 'Sarova Whitesands Beach Resort & Spa',
+    name: 'Sarova Whitesands Beach Resort & Spa',
     addressline1: 'Nyali/Malindi Highway',
     addressline2: '',
     zipcode: '801',
@@ -505,7 +505,7 @@ export const hotels = [
   },
   {
     chain_name: 'No chain',
-    hotel_name: 'Scandic Seinajoki',
+    name: 'Scandic Seinajoki',
     addressline1: 'Kauppakatu 10',
     addressline2: '',
     zipcode: '60100',
@@ -517,7 +517,7 @@ export const hotels = [
   },
   {
     chain_name: 'No chain',
-    hotel_name: 'Van der Valk Hotel Hildesheim',
+    name: 'Van der Valk Hotel Hildesheim',
     addressline1: 'Markt 4, GPS: Jakobistraße',
     addressline2: '',
     zipcode: '31134',
@@ -529,7 +529,7 @@ export const hotels = [
   },
   {
     chain_name: 'Marriott',
-    hotel_name: 'Sheraton Grand Taipei Hotel',
+    name: 'Sheraton Grand Taipei Hotel',
     addressline1: 'No.12, Sec. 1, Zhongxiao E. Rd',
     addressline2: '',
     zipcode: '10049',
@@ -541,7 +541,7 @@ export const hotels = [
   },
   {
     chain_name: 'InterContinental Hotels Group',
-    hotel_name: 'Holiday Inn Express London Greenwich',
+    name: 'Holiday Inn Express London Greenwich',
     addressline1: 'Bugsbys Way',
     addressline2: '',
     zipcode: 'SE10 0GD',
@@ -553,7 +553,7 @@ export const hotels = [
   },
   {
     chain_name: 'No chain',
-    hotel_name: 'Bulgaria Hotel',
+    name: 'Bulgaria Hotel',
     addressline1: '21 Alexandrovska Street',
     addressline2: '',
     zipcode: '8000',

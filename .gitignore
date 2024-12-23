@@ -11,6 +11,9 @@ node_modules
 # production
 /build
 
+#data
+/packages/api/data
+
 # misc
 .DS_Store
 .env
