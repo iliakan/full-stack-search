@@ -5,6 +5,8 @@ import { getSearch } from "@/services/get-search";
 import type { ISearchResult } from "@/types/search-result";
 import { cacheGet, cacheSet } from "@/utils/search-cache";
 import config from "@/config";
+import { toast } from "react-toastify";
+import { ApiRequestError } from "@/utils/api-request";
 
 const EMPTY_SEARCH_RESULT: ISearchResult = {
   hotels: [],
@@ -42,11 +44,13 @@ export function HomePage() {
     setIsLoading(true);
 
     requestTimeoutRef.current = setTimeout(async () => {
-      const result = await getSearch(value);
-
-      cacheSet(value, result);
-
-      setSearchResult(result);
+      try {
+        const result = await getSearch(value);
+        cacheSet(value, result);
+        setSearchResult(result);
+      } catch(e) {
+        setSearchResult(EMPTY_SEARCH_RESULT);
+      }
       setIsLoading(false);
     }, config.search.debounce);
   }, []);

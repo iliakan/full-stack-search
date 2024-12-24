@@ -1,4 +1,5 @@
 import type { ReactNode } from "react";
+import { ToastContainer } from "react-toastify";
 
 export function AppWrapper({ children }: { children: ReactNode }) {
   return (
@@ -8,6 +9,7 @@ export function AppWrapper({ children }: { children: ReactNode }) {
           {children}
         </div>
       </div>
+      <ToastContainer />
     </div>
   );
 }

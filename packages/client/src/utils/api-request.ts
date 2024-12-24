@@ -1,5 +1,6 @@
 import axios, { AxiosError, AxiosRequestConfig, AxiosResponse } from "axios";
 import config from "@/config";
+import { toast } from "react-toastify";
 
 /**
  * Server should return json with error description and/or status code
@@ -35,14 +36,15 @@ async function handleRequest<T>(
     const { data } = await request;
     return data;
   } catch (error) {
-    
+
     if (error instanceof AxiosError) {
-      // Handle all kinds of request errors: 
+      // Handle all kinds of request errors:
       // - with a valid json { error, status ?}, e.g. server reports something
       // - with bad JSON, e.g. something went wrong on the server
       // - network errors
       const errorData = error.response?.data as ApiError | undefined;
       const errorMessage = errorData?.error ?? error.message;
+      toast.error(errorMessage);
       throw new ApiRequestError(
         errorMessage,
         error.response?.status,
