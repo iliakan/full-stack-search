@@ -20,12 +20,13 @@ export function cacheGet(value: string) {
 
   // Check if we can evaluate the value directly from cache
   // e.g.
-  //   we have all matches for value=Uni 
+  //   we have all matches for value=Uni
   //   we look for value=Unit
   //   results for Unit are a subset of results for Uni
   // so we can return them
   // this logic only can be used if we truly have all the results (below the limit)
   for(const key in cache) {
+
     if (value.includes(key)) {
       const cachedResult = cache[key];
       const canUseCacheResult = cachedResult.cities.length < config.search.limit &&
@@ -34,9 +35,15 @@ export function cacheGet(value: string) {
 
       if (canUseCacheResult) {
         return {
-          hotels: cachedResult.hotels.filter((hotel) => hotel.name.toLowerCase().includes(value)),
-          cities: cachedResult.cities.filter((city) => city.name.toLowerCase().includes(value)),
-          countries: cachedResult.countries.filter((country) => country.name.toLowerCase().includes(value))
+          hotels: cachedResult.hotels.filter(
+            (hotel) => hotel.name.toLowerCase().includes(value) || hotel.country.toLowerCase().includes(value)
+          ),
+          cities: cachedResult.cities.filter(
+            (city) => city.name.toLowerCase().includes(value)
+          ),
+          countries: cachedResult.countries.filter(
+            (country) => country.name.toLowerCase().includes(value)
+          )
         };
       }
 

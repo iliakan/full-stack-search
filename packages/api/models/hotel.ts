@@ -22,7 +22,11 @@ const hotelSchema = new mongoose.Schema({
   zipcode: String,
   city: String,
   state: String,
-  countryisocode: String,
+  countryisocode: {
+    type: String,
+    required: true,
+    index: true
+  },
   star_rating: {
     type: Number,
     min: 0,

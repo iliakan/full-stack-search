@@ -17,14 +17,23 @@ describe('Search REST API', () => {
 
         // compare returned hotels with manually found ones
         const hotels = await Hotel.find({
-          name: {
-            $regex: new RegExp(term, 'i'),
-          },
+          $or: [
+            {
+              name: {
+                $regex: new RegExp(term, 'i'),
+              },
+            },
+            {
+              country: {
+                $regex: new RegExp(term, 'i'),
+              },
+            },
+          ]
         })
           .sort({ name: 1 })
-          .select('name');
+          .select('name country');
 
-        const hotelObjects = hotels.map((hotel) => pick(hotel, ['id', 'name']));
+        const hotelObjects = hotels.map((hotel) => pick(hotel, ['id', 'name', 'country']));
 
         expect(response.body.hotels).toEqual(hotelObjects);
       });

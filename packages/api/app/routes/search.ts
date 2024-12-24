@@ -11,15 +11,34 @@ export async function search(req: Request, res: Response) {
 
   // This can be further optimized
   // - We can use a single "aggregate" query to MongoDB instead of multiple queries
-  // - We can even consider caching cities and countries in the process memory,
+  // - We can consider caching cities and countries in the process memory,
   //   because these collections are small (25k of cities in the sample DB) and very stable
-  const [hotels, cities, countries] = await Promise.all([
+  const countries = await Country.find({
+    name: {
+      $regex: new RegExp(query, 'i')
+    }
+  }).sort({name: 1}).limit(config.search.limit).select('name code');
+
+  // We can also rewrite multiple queries into a single aggregation pipeline with $facets
+  // it'll be more complex and less maintainable
+  const [hotels, cities] = await Promise.all([
     (async () => {
       const hotelIds = await HotelSearch.search(query, config.search.limit);
 
       const hotels = await Hotel.find({
-        _id: { $in: hotelIds }
-      }).sort({name: 1}).select('name');
+        $or: [
+          {
+            _id: {
+              $in: hotelIds
+            }
+          },
+          {
+            countryisocode: {
+              $in: countries.map(country => country.code)
+            }
+          }
+        ]
+      }).sort({name: 1}).select('name country');
 
       return hotels;
     })(),
@@ -30,16 +49,11 @@ export async function search(req: Request, res: Response) {
       }
     }).sort({name: 1}).limit(config.search.limit).select('name'),
 
-    Country.find({
-      name: {
-        $regex: new RegExp(query, 'i')
-      }
-    }).sort({name: 1}).limit(config.search.limit).select('name')
   ]);
 
   res.json({
-    hotels: hotels.map(hotel => pick(hotel, ['id','name'])),
-    cities: cities.map(city => pick(city, ['id','name'])),
-    countries: countries.map(country => pick(country, ['id','name'])),
+    hotels: hotels.map(hotel => pick(hotel, ['id', 'name', 'country'])),
+    cities: cities.map(city => pick(city, ['id', 'name'])),
+    countries: countries.map(country => pick(country, ['id', 'name'])),
   });
 }
