@@ -5,8 +5,6 @@ import { getSearch } from "@/services/get-search";
 import type { ISearchResult } from "@/types/search-result";
 import { cacheGet, cacheSet } from "@/utils/search-cache";
 import config from "@/config";
-import { toast } from "react-toastify";
-import { ApiRequestError } from "@/utils/api-request";
 
 const EMPTY_SEARCH_RESULT: ISearchResult = {
   hotels: [],
